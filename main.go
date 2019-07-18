@@ -17,4 +17,7 @@ func main()  {
 	_, id := item.Create()
 	fmt.Printf("Id: %d\n", id)
 
+	student := modules.QueryStudentById(id)
+	fmt.Printf("student:%v\n", student)
+
 }
